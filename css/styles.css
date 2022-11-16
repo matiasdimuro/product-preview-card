@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+:root {
+  --color_primary: rgb(209, 129, 24);
+  --color_secondary: rgb(243, 90, 2);
+  --grey_dark: rgb(28, 35, 43);
+  --grey_light: rgb(108, 114, 137);
+  --ice_white: rgb(242, 235, 227);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--grey_light);
+  background-color: var(--ice_white);
+}
+
+body {
+  height: 100vh;
+  min-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 40rem;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 1.5rem;
+}
+
+article {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  letter-spacing: 8px;
+  font-style: italic;
+  color: var(--color_primary);
+}
+
+h1 {
+  font-size: 3.25rem;
+  color: var(--grey_dark);
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+div {
+  margin-top: 1.25rem;
+}
+
+div h1 {
+  color: var(--color_primary);
+  display: inline-block;
+}
+
+div p {
+  text-decoration: line-through;
+  display: inline-block;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+button {
+  color: #fff;
+  background-color: var(--color_primary);
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--color_secondary);
+}
+
+@media (min-width: 800px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: calc(768px - 1.5rem);
+  }
+
+  section {
+    margin: auto 1rem;
+  }
+
+  div {
+    margin-bottom: 1rem;
+  }
+
+  p, button {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 1.2rem;
+  }
+}
